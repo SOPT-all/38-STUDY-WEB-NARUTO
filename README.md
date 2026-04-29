@@ -1,0 +1,2 @@
+# 38-STUDY-WEB-NARUTO
+LET'S SOPT 38기 WEB 초심자 스터디
