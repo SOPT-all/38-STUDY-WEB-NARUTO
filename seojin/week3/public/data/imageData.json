@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "bookImg": "images/image.png",
+        "title": "어서와 파이썬은 처음이지!",
+        "price": 8000
+    },
+    {
+        "id": 2,
+        "bookImg": "images/naruto.jpg",
+        "title": "나루토귀엽",
+        "price": 210000
+    },
+    {
+        "id": 3,
+        "bookImg": "images/web.jpg",
+        "title":"웹 개발 쉽지 않다",
+        "price": 1004
+    }
+]
