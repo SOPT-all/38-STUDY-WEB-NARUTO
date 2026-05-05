@@ -17,6 +17,7 @@ const MainPage = () => {
         gap: "2.4rem",
       }}
     >
+      <TextBoard category={BoardCategory.Free} boardItems={[]} />
       <TextBoard category={BoardCategory.Free} boardItems={freeBoardItems} />
       <TextBoard
         category={BoardCategory.Market}

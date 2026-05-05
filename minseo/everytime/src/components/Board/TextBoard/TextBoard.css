@@ -57,3 +57,15 @@
     color: var(--color-gray-500);
   }
 }
+
+.text-board--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  color: var(--color-gray-700);
+  border-right: 0.1rem solid var(--color-gray-300);
+  border-bottom: 0.1rem solid var(--color-gray-300);
+  border-left: 0.1rem solid var(--color-gray-300);
+}

@@ -1,3 +1,4 @@
+import { EMPTY_BOARD_ITEMS } from "../../../constants/board";
 import type { BoardCategory, BoardItem } from "../../../types/board";
 import { formatBoardCreatedAt } from "../../../utils/Board";
 
@@ -9,6 +10,7 @@ interface TextBoardProps {
 }
 
 const TextBoard = ({ category, boardItems }: TextBoardProps) => {
+  const isBoardEmpty = boardItems.length === EMPTY_BOARD_ITEMS;
   return (
     <section className="text-board">
       <div className="text-board--header">
@@ -16,6 +18,9 @@ const TextBoard = ({ category, boardItems }: TextBoardProps) => {
       </div>
 
       <div className="text-board--content">
+        {isBoardEmpty && (
+          <p className="text-board--empty body05">게시물이 없습니다.</p>
+        )}
         <ul className="text-board--list">
           {boardItems.map((item) => (
             <li key={item.id} className="text-board--item">
