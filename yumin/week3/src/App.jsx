@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BoardBox from "./components/BoardBox";
+import BoardBox from "./components/Board/BoardBox";
 
 function App() {
   return (
