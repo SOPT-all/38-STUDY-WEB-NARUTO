@@ -2,7 +2,7 @@ export default function formatDate (createdAt) {
     /* 현재와의 차이 계산 */
     const date = new Date(createdAt);
     const now = Date.now();
-    const diffMin = (now-date) / (60 * 1000);
+    const diffMin = Math.floor((now-date) / (60 * 1000));
     
     /* 날짜 포맷팅을 위한 변수들 */
     const mm = String(date.getMonth() + 1).padStart(2, '0')
