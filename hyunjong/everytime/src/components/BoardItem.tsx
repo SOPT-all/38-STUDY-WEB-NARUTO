@@ -7,12 +7,30 @@ type BoardItemProps = {
   createdAt: string;
 };
 
+// 날짜 포멧
+function formatTime(createdAt: string) {
+  const now = new Date();
+  const created = new Date(createdAt);
+  const diffMin = Math.floor((now.getTime() - created.getTime()) / 1000 / 60); // 경과한 시간 / 1000(ms) / 60(초)
+
+  // 1시간 이하면 ~~분전
+  if (diffMin < 60) {
+    return `${diffMin}분 전`;
+  }
+
+  const month = String(created.getMonth() + 1).padStart(2, "0");
+  const day = String(created.getDate()).padStart(2, "0");
+  const hour = String(created.getHours()).padStart(2, "0");
+  const minute = String(created.getMinutes()).padStart(2, "0");
+  return `${month}/${day} ${hour}:${minute}`;
+}
+
 function BoardItem({ title, createdAt }: BoardItemProps) {
   return (
     <>
       <Wrapper>
-        <Title>{title}</Title>
-        <CreatedAt>{createdAt}</CreatedAt>
+        <Title>{title.slice(0, 18)}</Title>
+        <CreatedAt>{formatTime(createdAt)}</CreatedAt>
       </Wrapper>
     </>
   );

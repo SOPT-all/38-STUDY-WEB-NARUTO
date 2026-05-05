@@ -17,7 +17,7 @@ export const freePosts = [
     title: "한국역사의이해 한준수교수님",
     createdAt: "2026-05-05T12:10:00",
   },
-  { id: 4, title: "수험생인데", createdAt: "2026-05-05T13:10:00" },
+  { id: 4, title: "수험생인데", createdAt: "2026-05-05T18:10:00" },
 ];
 
 // 장터 게시판
