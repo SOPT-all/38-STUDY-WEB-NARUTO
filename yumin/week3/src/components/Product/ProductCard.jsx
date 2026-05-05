@@ -22,11 +22,15 @@ export const Price = styled.div`
 `;
 
 function ProductCard(props) {
+  const visibleTitle =
+    props.title.length > 8 ? props.title.slice(0, 8) + "..." : props.title;
+
+  const won = props.price.toLocaleString();
   return (
     <Card>
       <Image src={props.image} alt={props.title} />
-      <Title>{props.title}</Title>
-      <Price>{props.price}</Price>
+      <Title>{visibleTitle}</Title>
+      <Price>{won}원</Price>
     </Card>
   );
 }

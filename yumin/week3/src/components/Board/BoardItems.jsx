@@ -15,7 +15,7 @@ export const Time = styled.div`
 
 function BoardItems(props) {
   const visibleText =
-    props.text.length > 15 ? props.text.slice(0, 15) + "..." : props.text;
+    props.text.length > 15 ? props.text.slice(0, 15) : props.text;
 
   const createdTime = new Date(props.createdAt);
   const nowTime = new Date();
