@@ -8,7 +8,7 @@ export const Box = styled.main`
   width: 388px;
   height: 196px;
   justify-content: flex-start;
-  margin-bottom: 236px;
+  margin-bottom: 125px;
   border: 1px solid #9f9494;
 `;
 
