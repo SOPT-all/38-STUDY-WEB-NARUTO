@@ -13,9 +13,11 @@ export const Time = styled.div`
   color: #797979;
 `;
 function BoardItems(props) {
+  const visibleText =
+    props.text.length > 15 ? props.text.slice(0, 15) + "..." : props.text;
   return (
     <ItemsBox>
-      <span>{props.text}</span>
+      <span>{visibleText}</span>
       <Time>{props.createdAt}</Time>
     </ItemsBox>
   );
