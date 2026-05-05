@@ -1,11 +1,16 @@
+import styled from '@emotion/styled'
 
-function App() {
+export default function App() {
 
   return (
-    <h1>초기세팅 확인~~</h1>
+    <Title>초기세팅 확인~~</Title>
 
   )
 
 }
 
-export default App
+const Title = styled.h1 `
+  font-size: 100px;
+  color: red;
+`
+
