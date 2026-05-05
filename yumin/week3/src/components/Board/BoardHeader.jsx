@@ -6,6 +6,7 @@ export const Title = styled.h1`
   margin: 0px;
   border-bottom: 1px solid #9f9494;
   padding: 5px;
+  text-align: left;
 `;
 
 function BoardHeader(props) {
