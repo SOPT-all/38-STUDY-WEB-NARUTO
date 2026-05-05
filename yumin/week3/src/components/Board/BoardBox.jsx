@@ -3,7 +3,9 @@ import BoardHeader from "./BoardHeader";
 import BoardItems from "./BoardItems";
 
 export const Box = styled.main`
-  margin-bottom: 125px;
+  margin-bottom: 40px;
+  margin-top: 85px;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
   width: 388px;

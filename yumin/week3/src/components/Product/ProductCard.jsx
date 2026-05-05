@@ -17,7 +17,7 @@ export const Image = styled.img`
 export const Title = styled.h1`
   margin: 0;
   height: 40px;
-  display: fles;
+  display: flex;
   align-items: center;
   font-size: 15px;
   text-align: left;
