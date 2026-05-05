@@ -1,16 +1,21 @@
 import styled from '@emotion/styled'
+import formatDate from '../utils/formatDate'
 
 export default function BoardList({boardTitle, lists}) {
     return (
         <BoardContainer>
             <BoardHeader>{boardTitle}</BoardHeader>
             <ListWrapper>
-                {lists.map((item) =>
-                    <ListItem key={item.id}>
-                        <ListTitle>{item.title}</ListTitle>
-                        <ListTime>{item.createdAt}</ListTime>
-                    </ListItem>
-                )}
+                {lists.map((item) => {
+                    const formattedDate = formatDate(item.createdAt);
+                    
+                    return (
+                        <ListItem key={item.id}>
+                            <ListTitle>{item.title}</ListTitle>
+                            <ListTime>{formattedDate}</ListTime>
+                        </ListItem>
+                    )
+                })}
             </ListWrapper>
         </BoardContainer>
 
