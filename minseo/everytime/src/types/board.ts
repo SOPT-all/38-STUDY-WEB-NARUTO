@@ -4,9 +4,9 @@ export enum BoardCategory {
 }
 
 export interface BoardItem {
-  category: BoardCategory;
   id: number;
   title: string;
+  category?: BoardCategory;
   createdAt?: string;
   price?: number;
   thumbnailUrl?: string;

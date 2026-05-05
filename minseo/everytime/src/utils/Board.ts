@@ -20,3 +20,7 @@ export const formatBoardCreatedAt = (createdAt: string) => {
 
   return `${month}/${date} ${hours}:${minutes}`;
 };
+
+export const formatPrice = (price: number) => {
+  return price.toLocaleString("ko-KR") + "원";
+};

@@ -53,3 +53,27 @@ export const marketBoardItems: BoardItem[] = [
     createdAt: "2025-05-04T13:14:00",
   },
 ];
+
+export const imageBoardItems: BoardItem[] = [
+  {
+    id: 9,
+    title: "나루토 슝슝슝 나는야 나루토",
+    price: 8000,
+    thumbnailUrl:
+      "https://i.namu.wiki/i/6z3Rb8VBz4f419xQZAc0-i0KDlz946h1X34EcQ3Gmw7SJRnOM-jJqpC9oZeU-sFeZi8hyp-wZ106vUXntdup2w.webp",
+  },
+  {
+    id: 10,
+    title: "나루토 커욤",
+    price: 210000,
+    thumbnailUrl:
+      "https://i.namu.wiki/i/lNstxW54rty66Z2MYg5OgyWqWLsdb6iFbixHlmVi92TvZ0Lq6ppUEn6GdMyCwjDjkuvToq-BWFbO2pJ6jmt37Q.webp",
+  },
+  {
+    id: 11,
+    title: "웹개발 눈물나",
+    price: 80000,
+    thumbnailUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7zL2P1JNcuzB2H7BeCARU9JHh_crsoolGjQ&s",
+  },
+];

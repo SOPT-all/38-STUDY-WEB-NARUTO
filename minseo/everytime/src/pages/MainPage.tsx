@@ -1,5 +1,10 @@
+import { ImageBoard } from "../components/Board/ImageBoard/ImageBoard";
 import { TextBoard } from "../components/Board/TextBoard/TextBoard";
-import { freeBoardItems, marketBoardItems } from "../data/boardItems";
+import {
+  freeBoardItems,
+  imageBoardItems,
+  marketBoardItems,
+} from "../data/boardItems";
 import { BoardCategory } from "../types/board";
 
 const MainPage = () => {
@@ -17,6 +22,7 @@ const MainPage = () => {
         category={BoardCategory.Market}
         boardItems={marketBoardItems}
       />
+      <ImageBoard boardItems={imageBoardItems} />
     </main>
   );
 };

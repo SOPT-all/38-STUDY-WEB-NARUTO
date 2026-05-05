@@ -21,12 +21,14 @@ const TextBoard = ({ category, boardItems }: TextBoardProps) => {
             <li key={item.id} className="text-board--item">
               <h3 className="text-board--title body05">{item.title}</h3>
 
-              <time
-                className="text-board--date caption06"
-                dateTime={item.createdAt}
-              >
-                {formatBoardCreatedAt(item.createdAt)}
-              </time>
+              {item.createdAt && (
+                <time
+                  className="text-board--date caption06"
+                  dateTime={item.createdAt}
+                >
+                  {formatBoardCreatedAt(item.createdAt)}
+                </time>
+              )}
             </li>
           ))}
         </ul>
