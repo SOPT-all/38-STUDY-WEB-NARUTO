@@ -4,7 +4,7 @@ import BoardBox from "./components/BoardBox";
 function App() {
   return (
     <div>
-      <BoardBox />
+      <BoardBox title="자유 게시판" />
     </div>
   );
 }
