@@ -17,7 +17,7 @@ function BoardItems(props) {
     props.text.length > 15 ? props.text.slice(0, 15) + "..." : props.text;
   const createdTime = new Date(props.createdAt);
   const nowTime = new Date();
-  const diffMin = (nowTime - createdTime) / 1000 / 60;
+  const diffMin = Math.floor((nowTime - createdTime) / 1000 / 60);
   const visibleTime = diffMin < 60 ? `${diffMin}분 전` : props.createdAt;
   props.time;
   return (
