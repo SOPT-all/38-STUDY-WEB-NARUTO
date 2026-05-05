@@ -33,7 +33,6 @@ const Wrapper = styled.div`
   width: 388px;
   border: 1px solid #e3e3e3;
   overflow: hidden;
-  box-sizing: border-box;
 `;
 
 const Boardtitle = styled.div`
@@ -41,11 +40,9 @@ const Boardtitle = styled.div`
   padding: 10px;
   background: #ffffff;
   border-bottom: 1px solid #e3e3e3;
-  font-family: Pretendard;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
-  letter-spacing: 0.01em;
   color: #f91f15;
 `;
 

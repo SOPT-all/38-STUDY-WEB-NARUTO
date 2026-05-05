@@ -27,11 +27,12 @@ const Wrapper = styled.div`
   padding: 10px;
   background: #ffffff;
   border-bottom: 1px solid #e3e3e3;
-  box-sizing: border-box;
+  &:last-child {
+    border-bottom: none;
+  }
 `;
 
 const Title = styled.div`
-  font-family: Pretendard;
   font-weight: 500;
   font-size: 15px;
   line-height: 130%;
@@ -42,7 +43,6 @@ const Title = styled.div`
   text-overflow: ellipsis;
 `;
 const CreatedAt = styled.div`
-  font-family: Pretendard;
   font-weight: 500;
   font-size: 11px;
   line-height: 130%;
