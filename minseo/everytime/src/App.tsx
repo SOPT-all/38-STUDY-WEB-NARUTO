@@ -1,11 +1,8 @@
-import TextBoard from "./components/Board/TextBoard";
-import { boardItems } from "./data/boardItems";
-import { BoardCategory } from "./types/board";
-
+import { MainPage } from "./pages/MainPage";
 function App() {
   return (
     <>
-      <TextBoard category={BoardCategory.Free} boardItems={boardItems} />
+      <MainPage />
     </>
   );
 }

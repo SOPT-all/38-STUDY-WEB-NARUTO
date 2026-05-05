@@ -1,6 +1,6 @@
 import { BoardCategory, type BoardItem } from "../types/board";
 
-export const boardItems: BoardItem[] = [
+export const freeBoardItems: BoardItem[] = [
   {
     category: BoardCategory.Free,
     id: 1,
@@ -25,6 +25,9 @@ export const boardItems: BoardItem[] = [
     title: "나비야나비야어디를가느냐깡총깡총뛰어서어디",
     createdAt: "2026-05-03T16:14:25",
   },
+];
+
+export const marketBoardItems: BoardItem[] = [
   {
     category: BoardCategory.Market,
     id: 5,

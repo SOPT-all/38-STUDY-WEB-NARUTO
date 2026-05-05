@@ -18,6 +18,7 @@
 /* Typography Utilities */
 @layer utilities {
   .title03 {
+    font-family: var(--font-sans);
     font-size: var(--title03-size);
     font-weight: var(--title03-weight);
     line-height: var(--title03-line);
@@ -25,6 +26,7 @@
   }
 
   .title08 {
+    font-family: var(--font-sans);
     font-size: var(--title08-size);
     font-weight: var(--title08-weight);
     line-height: var(--title08-line);
@@ -32,6 +34,7 @@
   }
 
   .body05 {
+    font-family: var(--font-sans);
     font-size: var(--body05-size);
     font-weight: var(--body05-weight);
     line-height: var(--body05-line);
@@ -39,6 +42,7 @@
   }
 
   .body07 {
+    font-family: var(--font-sans);
     font-size: var(--body07-size);
     font-weight: var(--body07-weight);
     line-height: var(--body07-line);
@@ -46,6 +50,7 @@
   }
 
   .caption06 {
+    font-family: var(--font-sans);
     font-size: var(--caption06-size);
     font-weight: var(--caption06-weight);
     line-height: var(--caption06-line);
