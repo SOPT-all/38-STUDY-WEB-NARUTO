@@ -46,19 +46,6 @@ const BoardData = [
     title: "게시글 제목 8",
     createdAt: "2025-11-22T16:05:00",
     category: "장터"
-  },
-  {
-    id: 9,
-    title: "게시글 제목 9",
-    createdAt: "2025-11-23T13:30:00",
-    category: "자유"
-  },
-    {
-        id: 10,
-        title: "게시글 제목 10",
-        createdAt: "2026-05-04T20:30:00",
-        category: "장터"
-    }
+  }
 ]
-
 export { BoardData };
