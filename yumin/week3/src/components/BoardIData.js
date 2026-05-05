@@ -2,7 +2,7 @@ const freeBoardItems = [
   {
     id: 1,
     text: "수험생인데",
-    createdAt: "12분 전",
+    createdAt: "2026-05-05T22:10:00",
   },
   {
     id: 2,

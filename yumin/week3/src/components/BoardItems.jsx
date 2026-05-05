@@ -15,10 +15,15 @@ export const Time = styled.div`
 function BoardItems(props) {
   const visibleText =
     props.text.length > 15 ? props.text.slice(0, 15) + "..." : props.text;
+  const createdTime = new Date(props.createdAt);
+  const nowTime = new Date();
+  const diffMin = (nowTime - createdTime) / 1000 / 60;
+  const visibleTime = diffMin < 60 ? `${diffMin}분 전` : props.createdAt;
+  props.time;
   return (
     <ItemsBox>
       <span>{visibleText}</span>
-      <Time>{props.createdAt}</Time>
+      <Time>{visibleTime}</Time>
     </ItemsBox>
   );
 }
