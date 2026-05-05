@@ -1,3 +1,5 @@
+import styled from "@emotion/styled";
+
 function App() {
   return <></>;
 }
