@@ -4,10 +4,13 @@ export const theme = {
             red: '#F91F15',
         },
 
-        gary: {
+        gray: {
+            '300': '#E3E3E3',
             '500': '#A6A6A6',
             '700': '#444',
         },
+
+        white: '#FFF',
     },
 
     typography: {
