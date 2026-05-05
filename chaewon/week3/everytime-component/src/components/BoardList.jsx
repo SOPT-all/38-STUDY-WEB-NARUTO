@@ -1,12 +1,11 @@
 import styled from '@emotion/styled'
-import { listMock } from '../data/listMock'
 
-export default function BoardList({boardTitle}) {
+export default function BoardList({boardTitle, lists}) {
     return (
         <BoardContainer>
             <BoardHeader>{boardTitle}</BoardHeader>
             <ListWrapper>
-                {listMock.map((item) =>
+                {lists.map((item) =>
                     <ListItem key={item.id}>
                         <ListTitle>{item.title}</ListTitle>
                         <ListTime>{item.createdAt}</ListTime>
