@@ -12,16 +12,14 @@ function BoardList({ boardTitle, posts }: BoardListProps) {
     <>
       <Wrapper>
         <Boardtitle>{boardTitle}</Boardtitle>
-        <List>
-          {/* 스프레드로 복사본 만들고 복사본 뒤집기 */}
-          {[...posts].reverse().map((post) => (
-            <BoardItem
-              key={post.id}
-              title={post.title}
-              createdAt={post.createdAt}
-            />
-          ))}
-        </List>
+        {/* 스프레드로 복사본 만들고 복사본 뒤집기 */}
+        {[...posts].reverse().map((post) => (
+          <BoardItem
+            key={post.id}
+            title={post.title}
+            createdAt={post.createdAt}
+          />
+        ))}
       </Wrapper>
     </>
   );
@@ -44,9 +42,4 @@ const Boardtitle = styled.div`
   font-size: 16px;
   line-height: 130%;
   color: #f91f15;
-`;
-
-const List = styled.div`
-  margin: 0;
-  padding: 0;
 `;

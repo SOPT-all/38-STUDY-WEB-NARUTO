@@ -7,32 +7,24 @@ import ProductList from "./components/ProductList";
 function App() {
   return (
     <>
-      <Container>
-        <BoardContainer>
-          <FreeBoard>
-            <BoardList boardTitle="자유 게시판" posts={freePosts} />
-          </FreeBoard>
-          <MarketBoard>
-            <BoardList boardTitle="장터 게시판" posts={marketPosts} />
-          </MarketBoard>
-        </BoardContainer>
-        <ProductContainer>
-          <ProductList cards={products} />
-        </ProductContainer>
-      </Container>
+      <BoardContainer>
+        <FreeBoard>
+          <BoardList boardTitle="자유 게시판" posts={freePosts} />
+        </FreeBoard>
+        <MarketBoard>
+          <BoardList boardTitle="장터 게시판" posts={marketPosts} />
+        </MarketBoard>
+      </BoardContainer>
+      <ProductContainer>
+        <ProductList cards={products} />
+      </ProductContainer>
     </>
   );
 }
 
 export default App;
 
-const Container = styled.div`
-  position: relative;
-  height: 600px;
-`;
-const BoardContainer = styled.div`
-  position: relative;
-`;
+const BoardContainer = styled.div``;
 
 const FreeBoard = styled.div`
   position: absolute;
@@ -55,5 +47,4 @@ const ProductContainer = styled.div`
   top: 85px;
   left: 532px;
   gap: 2px;
-  opacity: 1;
 `;

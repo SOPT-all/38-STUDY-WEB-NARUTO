@@ -32,5 +32,4 @@ const Wrapper = styled.div`
   top: 85px;
   left: 532px;
   gap: 2px;
-  opacity: 1;
 `;
