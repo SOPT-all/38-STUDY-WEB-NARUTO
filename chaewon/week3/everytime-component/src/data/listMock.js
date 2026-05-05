@@ -38,35 +38,35 @@ export const listMock = [
         id: 6,
         title: "토익 스피킹 책 팔아요",
         category: "market",
-        createdAt: "2026-05-01T19:10:11",
+        createdAt: "2026-05-05T16:10:11",
     },
 
     {
         id: 7,
         title: "장터 게시판 데이터~~",
         category: "market",
-        createdAt: "2026-05-01T23:10:11",
+        createdAt: "2026-05-05T16:10:11",
     },
 
     {
         id: 8,
         title: "과제를 언제 다 할 수 있을까요..",
         category: "market",
-        createdAt: "2026-05-05T18:00:11",
+        createdAt: "2026-05-05T16:10:11",
     },
 
     {
         id: 9,
         title: "이것도 UI 테스트용으로 텍스트 길게 적고 말줄임표 잘 적용되는지 볼게요",
         category: "market",
-        createdAt: "2026-05-01T16:10:11",
+        createdAt: "2026-05-05T16:10:11",
     },
 
     {
         id: 10,
         title: "오늘 저녁 회 먹는다 와!!!",
         category: "market",
-        createdAt: "2026-05-05T18:10:11",
+        createdAt: "2026-05-05T16:10:11",
     },
 
 ]
