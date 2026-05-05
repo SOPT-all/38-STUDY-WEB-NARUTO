@@ -13,7 +13,8 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <MainLayout>
-        <BoardList boardTitle="자유 게시판" lists={listMock} />
+        <BoardList boardTitle="자유 게시판" lists={listMock.filter(item => item.category === "question")} />
+        <BoardList boardTitle="장터 게시판" lists={listMock.filter(item => item.category === "market")} />
         <CardList lists={cardMock}></CardList>
       </MainLayout>
     </ThemeProvider>
