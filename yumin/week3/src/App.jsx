@@ -1,6 +1,9 @@
 import { useState } from "react";
 import BoardBox from "./components/Board/BoardBox";
-import { freeBoardItems, marketBoardItems } from "./components/Board/BoardData";
+import {
+  freeBoardItems,
+  marketBoardItems,
+} from "./components/Board/BoardIData";
 
 function App() {
   return (

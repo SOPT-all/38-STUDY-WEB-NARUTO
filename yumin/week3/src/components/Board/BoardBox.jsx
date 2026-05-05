@@ -3,12 +3,12 @@ import BoardHeader from "./BoardHeader";
 import BoardItems from "./BoardItems";
 
 export const Box = styled.main`
+  margin-bottom: 125px;
   display: flex;
   flex-direction: column;
   width: 388px;
   height: 196px;
   justify-content: flex-start;
-  margin-bottom: 125px;
   border: 1px solid #9f9494;
 `;
 
