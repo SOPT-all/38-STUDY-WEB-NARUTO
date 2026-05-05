@@ -2,6 +2,13 @@ import styled from '@emotion/styled'
 import formatDate from '../utils/formatDate'
 
 export default function BoardList({boardTitle, lists}) {
+    const MAX_LENGTH = 20
+
+    const getSlicedTitle = (title) =>
+        title.length > MAX_LENGTH
+            ? title.slice(0, MAX_LENGTH)
+            : title
+
     return (
         <BoardContainer>
             <BoardHeader>{boardTitle}</BoardHeader>
@@ -11,7 +18,7 @@ export default function BoardList({boardTitle, lists}) {
                     
                     return (
                         <ListItem key={item.id}>
-                            <ListTitle>{item.title}</ListTitle>
+                            <ListTitle>{getSlicedTitle(item.title)}</ListTitle>
                             <ListTime>{formattedDate}</ListTime>
                         </ListItem>
                     )
