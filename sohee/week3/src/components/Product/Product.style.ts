@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
 
-export const PriceText = styled.span`
-color: red;
-`
-
 export const ProductWrapper = styled.div`
-    display: flex;
-    justify-content: space-around;
-    padding: 3rem;
-`
+  width: 152px;
+  height: 273px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+`;

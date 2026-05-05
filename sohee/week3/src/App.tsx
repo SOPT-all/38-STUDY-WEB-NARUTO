@@ -1,11 +1,11 @@
 import {BoardContainer} from './components/Board/BoardContainer';
-import {Product} from './components/Product/Product';
+import { ProductContainer } from './components/Product/ProductContainer';
 
 function App() {
     return (
         <div>
             <BoardContainer />
-            <Product />
+            <ProductContainer />
         </div>
     )
 }

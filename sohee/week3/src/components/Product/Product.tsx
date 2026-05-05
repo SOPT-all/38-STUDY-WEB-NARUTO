@@ -1,16 +1,18 @@
-import {ProductItem} from './ProductItem';
-import { ProductData } from '../../data/ProductData';
-import { ProductWrapper } from './Product.style';
+import { ProductWrapper } from "./Product.style";
+import { ProductItem } from "./ProductItem";
 
-
-function Product() {
-    return (
-        <ProductWrapper>
-            {ProductData.map((item) => (
-                <ProductItem key={item.id} title={item.title} price={item.price} image={item.image} />
-            ))}
-        </ProductWrapper>
-    )
+interface ProductProps {
+  title: string;
+  price: number;
+  image: string;
 }
 
-export { Product }
+function Product({ title, price, image }: ProductProps) {
+  return (
+    <ProductWrapper>
+      <ProductItem title={title} price={price} image={image} />
+    </ProductWrapper>
+  );
+}
+
+export { Product };
