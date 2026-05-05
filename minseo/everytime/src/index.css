@@ -1,0 +1,59 @@
+@import "./theme.css";
+
+/* Global reset */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-white);
+    color: var(--color-gray-700);
+  }
+}
+
+/* Typography Utilities */
+@layer utilities {
+  .title03 {
+    font-family: var(--font-sans);
+    font-size: var(--title03-size);
+    font-weight: var(--title03-weight);
+    line-height: var(--title03-line);
+    letter-spacing: var(--title03-track);
+  }
+
+  .title08 {
+    font-family: var(--font-sans);
+    font-size: var(--title08-size);
+    font-weight: var(--title08-weight);
+    line-height: var(--title08-line);
+    letter-spacing: var(--title08-track);
+  }
+
+  .body05 {
+    font-family: var(--font-sans);
+    font-size: var(--body05-size);
+    font-weight: var(--body05-weight);
+    line-height: var(--body05-line);
+    letter-spacing: var(--body05-track);
+  }
+
+  .body07 {
+    font-family: var(--font-sans);
+    font-size: var(--body07-size);
+    font-weight: var(--body07-weight);
+    line-height: var(--body07-line);
+    letter-spacing: var(--body07-track);
+  }
+
+  .caption06 {
+    font-family: var(--font-sans);
+    font-size: var(--caption06-size);
+    font-weight: var(--caption06-weight);
+    line-height: var(--caption06-line);
+    letter-spacing: var(--caption06-track);
+  }
+}
