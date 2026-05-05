@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 import { listMock } from '../data/listMock'
 
-export default function BoardList() {
+export default function BoardList({boardTitle}) {
     return (
         <BoardContainer>
-            <BoardHeader>자유 게시판</BoardHeader>
+            <BoardHeader>{boardTitle}</BoardHeader>
             <ListWrapper>
                 {listMock.map((item) =>
                     <ListItem key={item.id}>
