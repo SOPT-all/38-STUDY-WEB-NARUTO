@@ -1,9 +1,6 @@
 import styled from "@emotion/styled";
 import BoardBox from "./components/Board/BoardBox";
-import {
-  freeBoardItems,
-  marketBoardItems,
-} from "./components/Board/BoardIData";
+import { freeBoardItems, marketBoardItems } from "./components/Board/BoardData";
 
 import ProductList from "./components/Product/ProductList";
 
