@@ -1,5 +1,5 @@
-import type { BoardCategory, BoardItem } from "../../types/board";
-import { formatBoardCreatedAt } from "../../utils/Board";
+import type { BoardCategory, BoardItem } from "../../../types/board";
+import { formatBoardCreatedAt } from "../../../utils/Board";
 
 import "./TextBoard.css";
 

@@ -1,4 +1,4 @@
-import { TextBoard } from "../components/Board/TextBoard";
+import { TextBoard } from "../components/Board/TextBoard/TextBoard";
 import { freeBoardItems, marketBoardItems } from "../data/boardItems";
 import { BoardCategory } from "../types/board";
 
