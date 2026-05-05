@@ -1,7 +1,6 @@
 import styled from "@emotion/styled";
 import BoardHeader from "./BoardHeader";
 import BoardItems from "./BoardItems";
-import freeBoardItems from "./BoardIData";
 
 export const Box = styled.main`
   display: flex;
@@ -18,7 +17,7 @@ function BoardBox(props) {
     <Box>
       <BoardHeader title={props.title} />
 
-      {freeBoardItems.map((items) => (
+      {props.items.map((items) => (
         <BoardItems
           key={items.id}
           text={items.text}

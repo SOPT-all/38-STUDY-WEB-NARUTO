@@ -1,4 +1,4 @@
-const freeBoardItems = [
+export const freeBoardItems = [
   {
     id: 1,
     text: "나루토 최고",
@@ -20,9 +20,8 @@ const freeBoardItems = [
     createdAt: "2026-05-05T22:50:00",
   },
 ];
-export default freeBoardItems;
 
-const marketBoardItems = [
+export const marketBoardItems = [
   {
     id: 1,
     text: "햄버거 쿠폰 반값에 팝니다",
@@ -36,7 +35,7 @@ const marketBoardItems = [
   {
     id: 3,
     text: "원룸 양도 받을 분 있나요",
-    createdAt: "2026-5-01T17:27:00",
+    createdAt: "2026-05-01T17:27:00",
   },
   {
     id: 4,
