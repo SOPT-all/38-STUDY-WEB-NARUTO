@@ -1,17 +1,20 @@
 import styled from '@emotion/styled'
+import formatPrice from '../utils/formatPrice'
 
 export default function Cardist ({lists}) {
     return (
         <ListContainer>
-                {lists.map((item) => (
-                    <CardWrapper key={item.id}>
-                        <CardImage src={item.image} />
-                        <CardItem>
-                            <CardTitle>{item.title}</CardTitle>
-                            <CardPrice>{item.price}원</CardPrice>
-                        </CardItem>
-                    </CardWrapper>
-                ))}
+                {lists.map((item) => {
+                    const formattedPrice = formatPrice(item.price);
+                    return (
+                        <CardWrapper key={item.id}>
+                            <CardImage src={item.image} />
+                            <CardItem>
+                                <CardTitle>{item.title}</CardTitle>
+                                <CardPrice>{formattedPrice}원</CardPrice>
+                            </CardItem>
+                        </CardWrapper>
+                    )})}
         </ListContainer>
 
     )
