@@ -3,11 +3,12 @@ import ProductCard from "./ProductCard";
 import { productItems } from "./ProductDate";
 
 export const List = styled.main`
-  margin: 85px;
+  margin-top: 85px;
   width: 460px;
   height: 273px;
   border: 1px solid #9f9494;
   display: flex;
+  gap: 2px;
 `;
 
 function ProductList(props) {
