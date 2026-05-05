@@ -4,7 +4,7 @@ import { ProductData } from "../../data/ProductData";
 
 const ProductContainerWrapper = styled.div`
   display: flex;
-  gap: 0;
+  gap: 2px;
   margin: 80px;
 `;
 

@@ -9,16 +9,20 @@ export const BoardWrapper = styled.div`
     `
 
 export const BoardTitle = styled.h2`
+  width: 100%;
   height: 40px;
+
   display: flex;
   align-items: center;
 
-  color: red;
-  font-size: 1rem;
-  font-weight: 700;
-
   margin: 0;
   padding: 0 10px;
+
+  color: #f91f15;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.16px;
 
   border-bottom: 1px solid #e3e3e3;
   box-sizing: border-box;

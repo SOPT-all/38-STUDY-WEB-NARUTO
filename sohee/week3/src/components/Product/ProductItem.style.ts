@@ -14,28 +14,33 @@ export const ImageBox = styled.div`
 `;
 
 export const ProductTitle = styled.p`
-    width: 132px;
-    height: 21px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 130%;
-    letter-spacing: -1%;
-    color: #444444;
-    margin-left: 10px;
-    overflow: hidden;
+  width: 132px;
+  height: 21px;
+
+  margin: 10px 10px 0;
+  padding: 0;
+
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.16px;
+
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-    
 `;
 
 export const PriceText = styled.span`
-  display: block;
+  width: 132px;
+  height: 16px;
+
+  margin: 25px 10px 0;
+  padding: 0;
 
   color: red;
   font-size: 12px;
   font-weight: 500;
   line-height: 130%;
   letter-spacing: -0.12px;
-
-  padding: 0 10px 10px;
 `;

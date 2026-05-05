@@ -1,5 +1,5 @@
-import { BoardItemWrapper } from './BoardItem.stlye';
-import { CreatedAtText } from './BoardItem.stlye';
+import { BoardItemWrapper } from './BoardItem.style';
+import { CreatedAtText } from './BoardItem.style';
 
 
 interface BoardItemProps {

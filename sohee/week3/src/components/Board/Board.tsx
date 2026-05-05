@@ -1,6 +1,6 @@
 import { BoardItem } from './BoardItem';
-import { BoardWrapper } from './Board.style';
-import {BoardTitle} from './Board.style';
+import { BoardWrapper,BoardTitle} from './Board.style';
+
 
 interface BoardProps {
     title: string;
@@ -9,6 +9,7 @@ interface BoardProps {
 
 
 function Board({ title, data }: BoardProps) {
+    // createdAt을 기준으로 내림차순 정렬
      const sortedData = [...data].sort((a, b) => 
         new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );

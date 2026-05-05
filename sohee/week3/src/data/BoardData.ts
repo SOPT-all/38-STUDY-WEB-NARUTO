@@ -44,7 +44,7 @@ const BoardData = [
   {
     id: 8,
     title: "아이폰14팔아요",
-    createdAt: "2026-05-06T00:50:00",
+    createdAt: "2026-05-06T02:10:00",
     category: "장터"
   }
 ]
