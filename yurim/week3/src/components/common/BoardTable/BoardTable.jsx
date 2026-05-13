@@ -1,12 +1,11 @@
-import React from 'react';
 import {
   TableWrapper,
   BoardTitle,
-  DataSet,
+  BoardItem,
   ContentText,
   TimeText,
-} from './BoardTable.style'
-import { UploadData } from '../../../data/UploadData';
+} from "./BoardTable.style";
+import { formatDate } from "../../../data/FormatData";
 
 function BoardTable({ boardTitle, dataList, isMarket }) {
   return (
@@ -17,14 +16,10 @@ function BoardTable({ boardTitle, dataList, isMarket }) {
       {/* 4개의 게시글들 */}
       {/* 잘린내용은 볼 수 있도록 커서대면 구현 */}
       {dataList.map((data) => (
-        <DataSet key={data.id}>
-          <ContentText title={data.content}>
-            {data.content}
-          </ContentText>
-          <TimeText>
-            {UploadData(data.createdAt)}
-          </TimeText>
-        </DataSet>
+        <BoardItem key={data.id}>
+          <ContentText title={data.content}>{data.content}</ContentText>
+          <TimeText>{formatDate(data.createdAt)}</TimeText>
+        </BoardItem>
       ))}
     </TableWrapper>
   );

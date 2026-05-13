@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Colors } from '../../variables/Colors';
-import { CardLayout } from '../../variables/Layouts';
+import styled from "styled-components";
+import { Colors } from "../../variables/Colors";
+import { CardLayout } from "../../variables/Layouts";
 
 // 전체 카드섹션
 export const CardWrapper = styled.div`
@@ -14,11 +14,11 @@ export const CardWrapper = styled.div`
 `;
 
 // 각각의 카드정의
-export const DataSet = styled.div`
+export const BoardItem = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  width: ${CardLayout.cardWidth};  // 152px
+  width: ${CardLayout.cardWidth}; // 152px
   height: ${CardLayout.cardHeight}; // 272px
   border: 1px solid ${Colors.gray};
   box-sizing: border-box;
@@ -35,7 +35,7 @@ export const ItemImage = styled.img`
 
 export const InfoWrapper = styled.div`
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   width: 100%;
   height: 80px;

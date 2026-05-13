@@ -1,11 +1,9 @@
-import React from 'react';
-import BoardTable from './components/common/BoardTable/BoardTable';
-import TradingItems from './components/TradingItems/TradingItems';
-import { FreeBoardData } from './data/BoardData/FreeBoardData';
-import { MarketBoardData } from './data/BoardData/MarketBoardData';
-import { TradingItemsData } from './data/ItemsData/TradingItemsData';
-import styled from 'styled-components';
-import { Colors } from './variables/Colors';
+import BoardTable from "./components/common/BoardTable/BoardTable";
+import TradingItems from "./components/TradingItems/TradingItem";
+import { FreeBoardData } from "./data/BoardData/FreeBoardData";
+import { MarketBoardData } from "./data/BoardData/MarketBoardData";
+import { TradingItemsData } from "./data/ItemsData/TradingItemsData";
+import styled from "styled-components";
 
 const AppContainer = styled.div`
   display: flex;
@@ -33,10 +31,7 @@ function App() {
   return (
     <AppContainer>
       <BoardSection>
-        <BoardTable
-          boardTitle={"자유 게시판"}
-          dataList={FreeBoardData}
-        />
+        <BoardTable boardTitle={"자유 게시판"} dataList={FreeBoardData} />
         {/* isMarket전달 */}
         <BoardTable
           boardTitle={"장터 게시판"}

@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Colors } from '../../../variables/Colors';
-import { BoardLayout } from '../../../variables/Layouts';
+import styled from "styled-components";
+import { Colors } from "../../../variables/Colors";
+import { BoardLayout } from "../../../variables/Layouts";
 
 // 전체 틀 정의
 export const TableWrapper = styled.div`
@@ -13,7 +13,7 @@ export const TableWrapper = styled.div`
 
   // TableWrapper기준으로 바깥쪽이니까 margin
   // 조건부연산자
-  margin-left: ${(props) => (props.$isMarket ? '10px' : '0px')} 
+  margin-left: ${(props) => (props.$isMarket ? "10px" : "0px")};
 `;
 
 export const BoardTitle = styled.div`
@@ -30,10 +30,10 @@ export const BoardTitle = styled.div`
 `;
 
 // 데이터가 세로로 쌓일 수 있도록
-export const DataSet = styled.div`
+export const BoardItem = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   // 데이터들 양 끝으로 붙도록
   justify-content: space-between;
   align-items: center;
